@@ -6,8 +6,7 @@ console.log("Hello World");
 const pathToIndex = __dirname + "/views/index.html";
 
 app.get("/", function (req, res) {
-  //   res.sendFile(pathToIndex);
-  res.send("Hello Express");
+  res.sendFile(pathToIndex);
 });
 
 module.exports = app;
