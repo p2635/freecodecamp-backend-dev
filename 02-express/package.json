@@ -10,6 +10,10 @@
   },
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "live": "nodemon server.js"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.3"
   }
 }
