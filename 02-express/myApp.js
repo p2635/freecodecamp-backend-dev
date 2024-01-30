@@ -8,6 +8,7 @@ console.log("Hello World");
 
 // Middleware
 app.use("/public", express.static(__dirname + "/public"));
+app.use(bodyParser.urlencoded({ extended: false }));
 app.use("/", function (req, res, next) {
   logMessage = `${req.method} ${req.path} - ${req.ip}`;
   console.log(logMessage);
