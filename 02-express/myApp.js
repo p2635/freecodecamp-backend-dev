@@ -38,4 +38,9 @@ app.get("/json", function (req, res) {
   res.json({ message: greeting });
 });
 
+// Build an echo server with req params
+app.get("/:word/echo", function (req, res) {
+  res.json({ echo: req.params.word });
+});
+
 module.exports = app;
