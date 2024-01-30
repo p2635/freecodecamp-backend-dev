@@ -6,9 +6,15 @@ console.log("Hello World");
 
 const pathToIndex = __dirname + "/views/index.html";
 
+// Middleware
 app.use("/public", express.static(__dirname + "/public"));
+app.use("/", function (req, res, next) {
+  logMessage = `${req.method} ${req.path} - ${req.ip}`;
+  console.log(logMessage);
+  next();
+});
 
-app.get("/", function (req, res) {
+app.get("/", function (req, res, next) {
   res.sendFile(pathToIndex);
 });
 
