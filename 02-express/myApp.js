@@ -2,9 +2,8 @@ require("dotenv").config();
 let express = require("express");
 let app = express();
 
+// Meet the Node console
 console.log("Hello World");
-
-const pathToIndex = __dirname + "/views/index.html";
 
 // Middleware
 app.use("/public", express.static(__dirname + "/public"));
@@ -26,10 +25,13 @@ app.get(
   }
 );
 
+// Serve an HTML File
+const pathToIndex = __dirname + "/views/index.html";
 app.get("/", function (req, res) {
   res.sendFile(pathToIndex);
 });
 
+// Use .env variables
 app.get("/json", function (req, res) {
   const greeting =
     process.env.MESSAGE_STYLE === "uppercase" ? "HELLO JSON" : "Hello json";
