@@ -51,6 +51,9 @@ app
     // Get params via a query string
     res.json({ name: `${req.query.first} ${req.query.last}` });
   })
-  .post();
+  .post(function (req, res) {
+    // Get Data from POST Requests
+    res.json({ name: `${req.body.first} ${req.body.last}` });
+  });
 
 module.exports = app;
