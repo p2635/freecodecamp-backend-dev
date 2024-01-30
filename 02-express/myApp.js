@@ -3,8 +3,10 @@ let app = express();
 
 console.log("Hello World");
 
+const pathToIndex = __dirname + "/views/index.html";
+
 app.get("/", function (req, res) {
-  res.send("Hello Express");
+  res.sendFile(pathToIndex);
 });
 
 module.exports = app;
