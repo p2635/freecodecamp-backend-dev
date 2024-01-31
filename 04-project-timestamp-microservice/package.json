@@ -1,5 +1,5 @@
 {
-  "name": "fcc-api-projects-boilerplate",
+  "name": "fcc-api-timestamp-project",
   "version": "0.0.1",
   "description": "An FCC Backend Challenge",
   "main": "index.js",
@@ -12,13 +12,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/freeCodeCamp/boilerplate-project-timestamp.git"
+    "url": "https://github.com/p2635/freecodecamp-backend-dev.git"
   },
   "bugs": {
-    "url": "https://github.com/freeCodeCamp/freeCodeCamp/issues"
+    "url": "https://github.com/p2635/freecodecamp-backend-dev/issues"
   },
-  "homepage": "https://github.com/freeCodeCamp/boilerplate-project-timestamp#readme",
-  "author": "freeCodeCamp <team@freecodecamp.org>",
+  "homepage": "https://github.com/p2635/freecodecamp-backend-dev/tree/main/04-project-timestamp-microservice",
+  "author": "Philip Wong",
   "keywords": [
     "node",
     "express",
