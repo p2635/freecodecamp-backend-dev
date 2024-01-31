@@ -47,21 +47,21 @@ const arrayOfPeople = [
 ];
 
 const createManyPeople = (arrayOfPeople, done) => {
-  Person.create(arrayOfPeople, function (err, people) {
+  Person.create(arrayOfPeople, (err, people) => {
     if (err) return console.error(err);
     done(null, people);
   });
 };
 
 const findPeopleByName = (personName, done) => {
-  Person.find({ name: personName }, function (err, people) {
+  Person.find({ name: personName }, (err, people) => {
     if (err) return console.error(err);
     done(null, people);
   });
 };
 
 const findOneByFood = (food, done) => {
-  Person.findOne({ favoriteFoods: food }, function (err, person) {
+  Person.findOne({ favoriteFoods: food }, (err, person) => {
     if (err) return console.error(err);
     done(null, person);
   });
