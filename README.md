@@ -10,14 +10,16 @@ Today, one of the popular ways to build applications is through microservices, w
 
 In the Back End Development and APIs Certification, you'll learn how to write back end apps with Node.js and npm. You'll also build web applications with the Express framework, and build a People Finder microservice with MongoDB and the Mongoose library.
 
-Modules:
+Tutorial Modules:
 
 - Managing Packages with NPM
 - Basic Node and Express
 - MongoDB and Mongoose
-- Back End Development and APIs Projects
-  - Timestamp Microservice
-  - Request Header Parser Microservice
-  - URL Shortener Microservice
-  - Exercise TrackerNot Passed
-  - File Metadata Microservice
+
+Back End Development and APIs Projects:
+
+- Timestamp Microservice
+- Request Header Parser Microservice
+- URL Shortener Microservice
+- Exercise TrackerNot Passed
+- File Metadata Microservice
