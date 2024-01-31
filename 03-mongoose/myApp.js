@@ -28,8 +28,26 @@ const createAndSavePerson = (done) => {
   });
 };
 
+const arrayOfPeople = [
+  {
+    name: "Evil Phil",
+    age: 250,
+    favoriteFoods: ["Devil Fruit", "Mandrake Root", "Dark Potion"],
+  },
+  {
+    name: "Good Phil",
+    age: 90,
+    favoriteFoods: ["Holy Water", "Apple of Eternal Life", "Light Potion"],
+  },
+  {
+    name: "New Phil",
+    age: 1,
+    favoriteFoods: ["Milk", "More Milk", "Milk Again"],
+  },
+];
+
 const createManyPeople = (arrayOfPeople, done) => {
-  done(null /*, data*/);
+  done(null, data);
 };
 
 const findPeopleByName = (personName, done) => {
