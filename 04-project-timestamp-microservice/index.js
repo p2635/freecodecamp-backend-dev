@@ -25,11 +25,20 @@ app.get("/api/hello", function (req, res) {
 });
 
 app.get("/api/:date", function (req, res) {
-  let date = new Date(req.params.date);
-  if (isNaN(date)) {
-    res.json({ error: "Invalid Date" });
+  const dayjs = require("dayjs");
+  let date = req.params.date;
+
+  // If input is all numbers then it's likely to be a unix timestamp.
+  // dayjs requires unix timestamp to be a number to parse.
+  date = dayjs(/^\d+$/.test(date) ? parseInt(date) : date);
+
+  if (date.isValid()) {
+    res.json({
+      unix: date.valueOf(),
+      utc: new Date(date).toUTCString(),
+    });
   } else {
-    res.json({ unix: Date.parse(date), utc: date.toUTCString() });
+    res.json({ error: "Invalid Date" });
   }
 });
 
