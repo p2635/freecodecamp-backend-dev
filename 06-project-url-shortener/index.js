@@ -25,9 +25,7 @@ connectToMongo();
 
 const createAndSaveUrl = (newURL) => {
   const document = new Url({ url: newURL });
-  async () => {
-    await document.save();
-  };
+  document.save();
   console.log(`New document created for url ${newURL}.`);
 };
 
