@@ -20,16 +20,16 @@ Hopefully the short_url that I create does not have to match up with the example
 
 These are the necessary ingredients for the solution.
 
-1. Connect to a live mongodb instance.
-2. Create database records and save them to mongodb (POST).
-   1. If the user POSTs for the exact same long URL, I should not create duplicate DB entries.
-   2. A longurl is case-sensitive, so http://hello.com is not the same as http://HELLO.COM.
-3. Fetch longurl from DB if provided a shorturl from the user. Then, redirect them to that website.
-4. Check longurl is valid format. Examples after my testing on their test website:
-   1. http://www.example.com
-   2. http://example.com
-   3. https://example.com
-5. Check longurl is invalid format. Examples after my testing on their test website:
-   1. example.com
-   2. www.example.com
-6. Check if a longurl with valid format is a valid URL (according to the hint from freecodecamp). I found some docs here: https://www.geeksforgeeks.org/node-js-dns-lookup-method/
+- [x] Connect to a live mongodb instance.
+- [ ] Create database records and save them to mongodb (POST).
+  - [ ] If the user POSTs for the exact same long URL, I should not create duplicate DB entries.
+  - [ ] A longurl is case-sensitive, so http://hello.com is not the same as http://HELLO.COM.
+- [ ] Fetch longurl from DB if provided a shorturl from the user. Then, redirect them to that website.
+- [ ] Check longurl is valid format. Examples after my testing on their test website:
+  - [ ] http://www.example.com
+  - [ ] http://example.com
+  - [ ] https://example.com
+- [ ] Check longurl is invalid format. Examples after my testing on their test website:
+  - [ ] example.com
+  - [ ] www.example.com
+- [ ] Check if a longurl with valid format is a valid URL (according to the hint from freecodecamp). I found some docs here: https://www.geeksforgeeks.org/node-js-dns-lookup-method/
