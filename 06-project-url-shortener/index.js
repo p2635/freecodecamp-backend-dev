@@ -17,6 +17,12 @@ app.get("/", function (req, res) {
   res.sendFile(process.cwd() + "/views/index.html");
 });
 
+const connectToMongo = async () => {
+  await mongoose.connect(process.env.MONGO_URI);
+  console.log("Connected to MongoDB");
+};
+connectToMongo();
+
 app.listen(port, function () {
   console.log(`Listening on port ${port}`);
 });
