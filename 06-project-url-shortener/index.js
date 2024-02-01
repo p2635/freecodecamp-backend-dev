@@ -16,6 +16,8 @@ app.get("/", function (req, res) {
   res.sendFile(process.cwd() + "/views/index.html");
 });
 
+const urlSchema = new mongoose.Schema({ url: String });
+
 app.listen(port, function () {
   console.log(`Listening on port ${port}`);
 });
