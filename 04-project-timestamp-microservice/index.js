@@ -24,14 +24,19 @@ app.get("/api/hello", function (req, res) {
   res.json({ greeting: "hello API" });
 });
 
+// use dayjs for awesome date time functionality
+const dayjs = require("dayjs");
+
 // API route if user has provided no date
 app.get("/api/", function (req, res) {
-  // to be implemented
+  res.json({
+    unix: "bla",
+    utc: "bla",
+  });
 });
 
 // API route if user has provided a date
 app.get("/api/:date", function (req, res) {
-  const dayjs = require("dayjs");
   let date = req.params.date;
 
   // If input is all numbers then it's likely to be a unix timestamp.
