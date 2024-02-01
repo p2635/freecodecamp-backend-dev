@@ -29,6 +29,7 @@ const createAndSaveUrl = (newURL, done) => {
     await document.save();
   };
   console.log(`New document created for url ${newURL}.`);
+  done(null, newURL);
 };
 
 app.listen(port, function () {
