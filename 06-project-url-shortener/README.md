@@ -43,3 +43,5 @@ These are the necessary ingredients for the solution.
    2. I never understood how `done` and `done(null, data)` worked in the first place. Seems like some callback (cb) functions are deprecated by mongoose. This makes it even more confusing for me.
 2. I spent hours trying to figure out how to fetch a value from a document (the URL). I might have gotten close with query() and exec(), but I still don't know how to store it to a string variable.
 3. I don't fully understand the documentation from mongoose. It has a lack of examples that fits what I am looking for.
+4. My error handling knowledge is poor, I am not doing any of that.
+5. I don't fully understand how arrow functions work.
