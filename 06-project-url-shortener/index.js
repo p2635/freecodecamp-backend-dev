@@ -29,7 +29,7 @@ const createAndSaveUrl = (newURL) => {
   console.log(`New document created for url ${newURL}.`);
 };
 
-const findUrlByShortUrl = (url, done) => {
+const findUrlByShortUrl = (url) => {
   // To implement
 };
 
