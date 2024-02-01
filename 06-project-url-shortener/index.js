@@ -23,13 +23,12 @@ const connectToMongo = async () => {
 };
 connectToMongo();
 
-const createAndSaveUrl = (newURL, done) => {
+const createAndSaveUrl = (newURL) => {
   const document = new Url({ url: newURL });
   async () => {
     await document.save();
   };
   console.log(`New document created for url ${newURL}.`);
-  done(null, newURL);
 };
 
 const findUrlByShortUrl = (url, done) => {
