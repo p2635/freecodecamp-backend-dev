@@ -23,6 +23,14 @@ const connectToMongo = async () => {
 };
 connectToMongo();
 
+const createAndSaveUrl = (newURL, done) => {
+  const document = new Url({ url: newURL });
+  async () => {
+    await document.save();
+  };
+  console.log(`New document created for url ${newURL}.`);
+};
+
 app.listen(port, function () {
   console.log(`Listening on port ${port}`);
 });
