@@ -17,6 +17,7 @@ app.get("/", function (req, res) {
 
 mongoose.connect(process.env.MONGO_URI);
 const urlSchema = new mongoose.Schema({ url: String });
+const Url = mongoose.model("Url", urlSchema);
 
 app.listen(port, function () {
   console.log(`Listening on port ${port}`);
