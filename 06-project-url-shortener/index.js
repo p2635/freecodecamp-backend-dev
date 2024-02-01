@@ -3,7 +3,7 @@ const express = require("express");
 const cors = require("cors");
 const app = express();
 const mongoose = require("mongoose");
-const urlSchema = new mongoose.Schema({ url: String });
+const urlSchema = new mongoose.Schema({ url: { type: String, unique: true } });
 const Url = mongoose.model("Url", urlSchema);
 
 // Basic Configuration
