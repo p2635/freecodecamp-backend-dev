@@ -25,11 +25,11 @@ These are the necessary ingredients for the solution.
   - [ ] If the user POSTs for the exact same long URL, I should not create duplicate DB entries.
   - [ ] A longurl is case-sensitive, so http://hello.com is not the same as http://HELLO.COM.
 - [ ] Fetch longurl from DB if provided a shorturl from the user. Then, redirect them to that website.
-- [ ] Check longurl is valid format. Examples after my testing on their test website:
-  - [ ] http://www.example.com
-  - [ ] http://example.com
-  - [ ] https://example.com
-- [ ] Check longurl is invalid format. Examples after my testing on their test website:
-  - [ ] example.com
-  - [ ] www.example.com
+- [x] Check longurl is valid format. Examples after my testing on their test website:
+  - [x] http://www.example.com
+  - [x] http://example.com
+  - [x] https://example.com
+- [x] Check longurl is invalid format. Examples after my testing on their test website:
+  - [x] example.com
+  - [x] www.example.com
 - [ ] Check if a longurl with valid format is a valid URL (according to the hint from freecodecamp). I found some docs here: https://www.geeksforgeeks.org/node-js-dns-lookup-method/
