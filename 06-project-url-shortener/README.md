@@ -45,3 +45,12 @@ These are the necessary ingredients for the solution.
 3. I don't fully understand the documentation from mongoose. It has a lack of examples that fits what I am looking for.
 4. My error handling knowledge is poor, I am not doing any of that.
 5. I don't fully understand how arrow functions work.
+
+# Battling frustrations
+
+## About `async` and `await`
+
+These links helped:
+
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Bad_await
+- https://stackoverflow.com/a/48036084
