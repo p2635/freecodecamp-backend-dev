@@ -36,6 +36,15 @@ const findUrlByShortUrl = (url, done) => {
   // To implement
 };
 
+function isValidUrl(string) {
+  try {
+    new URL(string);
+    return true;
+  } catch (err) {
+    return false;
+  }
+}
+
 app.listen(port, function () {
   console.log(`Listening on port ${port}`);
 });
