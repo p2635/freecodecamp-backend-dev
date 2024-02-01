@@ -33,6 +33,10 @@ const findUrlByShortUrl = (url, done) => {
   // To implement
 };
 
+const checkIfUrlExists = (url) => {
+  // To implement
+};
+
 function isValidUrl(string) {
   try {
     new URL(string);
