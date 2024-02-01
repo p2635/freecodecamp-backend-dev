@@ -18,8 +18,8 @@ Tutorial Modules:
 
 Back End Development and APIs Projects:
 
-- Timestamp Microservice ([my dev notes](https://github.com/p2635/freecodecamp-backend-dev/issues/2))
+- Timestamp Microservice
 - Request Header Parser Microservice
 - URL Shortener Microservice
-- Exercise TrackerNot Passed
+- Exercise Tracker
 - File Metadata Microservice
