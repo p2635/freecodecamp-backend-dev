@@ -32,6 +32,10 @@ const createAndSaveUrl = (newURL, done) => {
   done(null, newURL);
 };
 
+const findUrlByShortUrl = (url, done) => {
+  // To implement
+};
+
 app.listen(port, function () {
   console.log(`Listening on port ${port}`);
 });
