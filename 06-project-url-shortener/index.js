@@ -6,7 +6,6 @@ const mongoose = require("mongoose");
 
 // Basic Configuration
 const port = process.env.PORT || 3000;
-mongoose.connect(process.env.MONGO_URI);
 
 app.use(cors());
 
@@ -16,6 +15,7 @@ app.get("/", function (req, res) {
   res.sendFile(process.cwd() + "/views/index.html");
 });
 
+mongoose.connect(process.env.MONGO_URI);
 const urlSchema = new mongoose.Schema({ url: String });
 
 app.listen(port, function () {
