@@ -39,7 +39,7 @@ These are the necessary ingredients for the solution.
 # Frustrations
 
 1. When wrapping `document.save();` with 'async' and 'await', it fails to save the document for some reason. Maybe there is a race condition where it saves before the db is even connected.
-   1. I don't fully understand how 'async' and 'await' works.
+   1. I don't fully understand how `async` and `await` works. I got this at one point: `SyntaxError: await is only valid in async functions and the top level bodies of modules`
    2. I never understood how `done` and `done(null, data)` worked in the first place. Seems like some callback (cb) functions are deprecated by mongoose. This makes it even more confusing for me.
 2. I spent hours trying to figure out how to fetch a value from a document (the URL). I might have gotten close with query() and exec(), but I still don't know how to store it to a string variable.
 3. I don't fully understand the documentation from mongoose. It has a lack of examples that fits what I am looking for.
