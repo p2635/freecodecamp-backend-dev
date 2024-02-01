@@ -24,7 +24,7 @@ These are the necessary ingredients for the solution.
 - [ ] Create database records and save them to mongodb (POST).
   - [ ] If the user POSTs for the exact same long URL, I should not create duplicate DB entries.
   - [ ] A longurl is case-sensitive, so http://hello.com is not the same as http://HELLO.COM.
-- [ ] Create a POST endpoint for `/api/shorturl`
+- [ ] Create a POST endpoint for `/api/shorturl` which returns the original URL and some kind of value stored in mongodb (this is the short url).
 - [ ] Create a GET endpoint for `/api/shorturl/<short_url>`
 - [ ] Fetch longurl from DB if provided a shorturl from the user. Then, redirect them to that website.
 - [x] Check longurl is valid format. Examples after my testing on their test website:
