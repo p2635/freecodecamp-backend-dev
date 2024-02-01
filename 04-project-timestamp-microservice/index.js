@@ -24,6 +24,7 @@ app.get("/api/hello", function (req, res) {
   res.json({ greeting: "hello API" });
 });
 
+// API route if user has provided a date
 app.get("/api/:date", function (req, res) {
   const dayjs = require("dayjs");
   let date = req.params.date;
