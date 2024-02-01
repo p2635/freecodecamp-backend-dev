@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "cors": "^2.8.0",
+    "dayjs": "^1.11.10",
     "express": "^4.12.4"
   },
   "repository": {
