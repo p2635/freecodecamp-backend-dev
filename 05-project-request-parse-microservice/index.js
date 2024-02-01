@@ -19,9 +19,13 @@ app.get("/", function (req, res) {
   res.sendFile(__dirname + "/views/index.html");
 });
 
-// your first API endpoint...
+// Request Header Parser Microservice
 app.get("/api/whoami", function (req, res) {
-  res.json({ greeting: "hello API" });
+  res.json({
+    ipaddress: req.ip,
+    language: req.headers["accept-language"],
+    software: req.headers["user-agent"],
+  });
 });
 
 // listen for requests :)
