@@ -29,9 +29,10 @@ const dayjs = require("dayjs");
 
 // API route if user has provided no date
 app.get("/api/", function (req, res) {
+  const date = new Date();
   res.json({
-    unix: "bla",
-    utc: "bla",
+    unix: Date.now(),
+    utc: date.toUTCString(),
   });
 });
 
